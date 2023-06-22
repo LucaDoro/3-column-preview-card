@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+:root {
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral*/
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs*/
+  --very-light-gray: hsl(0, 0%, 95%); /* background, heading, buttons*/
+
+  --font: 15px;
+  --Lexend-Deca: 'Lexend Deca';
+  --Big-Shoudlers-Display: 'Big Shoulders Display';
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.left-card {
+  height: 500px;
+  width: 300px; 
+  background-color: var(--bright-orange);
+}
+.middle-card {
+  height: 500px;
+  width: 300px;
+  background-color: var(--dark-cyan);
+
+}
+.right-card {
+  height: 500px;
+  width: 300px;
+  background-color: var(--very-dark-cyan);
+}
+
+p {
+  color: var(--transparent-white);
+  font-family:var(--Lexend-Deca);
+  font-size: 1rem;
+  font-weight: 400;
+  width: 220px;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: var(--Big-Shoudlers-Display);
+  color: var(--very-light-gray);
+  font-weight: 700;
+}
+
+button {
+  background-color: var(--very-light-gray);
+  mix-blend-mode: screen;
+  height: 2.5rem;
+  width: 7rem;
+  border: none;
+  border-radius: 25px;
+  font-family: var(--Lexend-Deca);
+  font-size: 0.7rem;
+  transition: background-color 0.15s,
+  color 0.15s;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: var(--very-light-gray)
+}
+
+img {
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 3rem
+}
+
+
